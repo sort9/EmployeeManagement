@@ -33,21 +33,21 @@ void updateLastName(string newLastName);
 void updatePayRate(double newPayRate);
 void updateRole(string newRole);
 
-updateFirstName(string newFirstName) {
+void updateFirstName(string newFirstName) {
     employees[i].employeeFirstName = newFirstName;
     cout << "Employee first name updated..." << endl;
     cout << "Returning to main menu..." << endl;
 }
 
-updateLastName(string newLastName) {
+void updateLastName(string newLastName) {
     // logic for updating last name
 }
 
-updatePayRate(double newPayRate) {
+void updatePayRate(double newPayRate) {
     // logic for updating pay rate
 }
 
-updateRole(string newRole) {
+void updateRole(string newRole) {
     // logic for updating position
 }
 
