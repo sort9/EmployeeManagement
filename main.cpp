@@ -7,7 +7,7 @@ using namespace std;
 
 // program global variables
 int i;
-string newFirstName, newLastName, newRole;
+string new_first_name, new_last_name, newRole;
 double newPayRate;
 
 struct Employee {
@@ -37,6 +37,7 @@ void updateFirstName(string newFirstName) {
     employees[i].employeeFirstName = newFirstName;
     cout << "Employee first name updated..." << endl;
     cout << "Returning to main menu..." << endl;
+    displayMenu();
 }
 
 void updateLastName(string newLastName) {
@@ -72,9 +73,9 @@ void searchEmployee(int id) {
                     cout << "Returning to main menu..." << endl;
                     displayMenu();
                 case 1:
-                    cout << "Enter new name:";
-                    cin >> newFirstName;
-                    updateFirstName(string newFirstName);
+                    cout << "Enter new name: ";
+                    cin >> new_first_name;
+                    updateFirstName(new_first_name);
             }
             break;
         }
